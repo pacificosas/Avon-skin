@@ -89,7 +89,6 @@ div#SubscribePanel {
     padding: 0!important;
 }
 div#ContactUsPanel {
-    max-width: 8%!important;
     margin-right: 9%!important;
     display: inline-block!important;
     vertical-align: top!important;
@@ -101,8 +100,7 @@ div#ContactUsPanel a {
     width: 110%!important;
     border: none!important;
     padding: 0!important;
-    background: #bbb!important;
-    border: 1px solid black!important;
+    background: black !important;
 }
 #ContactUsPanel a svg-icon {
     display: none!important;
@@ -110,8 +108,9 @@ div#ContactUsPanel a {
 div#ContactUsPanel a span {
     text-align: center !important;
     font-weight: 600 !important;
-    color: black !important;
+    color: white !important;
     padding: 11px 7px !important;
+    display: inline-block!important;
 }
 div#SubscribeInput {
     border-radius: 0!important;
@@ -131,10 +130,6 @@ div#FooterColumns {
     padding-top: 45px!important;
     margin: 0 auto!important;
 }
-div#FooterSocialMediaColumn {
-    margin: 0 auto!important;
-    width: 20%!important;
-}
 div#FooterSocialMediaColumn nav {
     display: inline-block!important;
 }
@@ -151,20 +146,23 @@ span.SocialText {
 .FARRepWidget h2, .BecomeARepForm h2 {
     text-transform: uppercase!important;
 }
-div#FooterColumns div {
+div#FooterColumns>div {
     position: relative !important;
     border: none!important;
+    vertical-align: top!important;
+    display: inline-block!important;
+    padding: 0 2%!important;
+    width: 25%!important;
 }
 .LeftColumnFAR {
     display: block!important;
+    width: 100%!important;
 }
 .RightColumnFAR {
     display: block!important;
+    position: relative!important;
 }
 .FARRepWidget, .BARRepWidget {
-    width: auto !important;
-    max-width: 60% !important;
-   /* margin: 0 auto;*/
     background: none!important;
     border: none!important;
     padding: 0!important;
@@ -188,8 +186,17 @@ form#FindARepForm h2, .BecomeARepForm h2 {
 }
 div#FooterRepColumn {
     padding: 0!important;
-    width: 35%!important;
+    /*width: 35%!important;*/
 }
 div#CopyrightBar {
     max-width: 100%!important;
+}
+
+/*Media query*/
+
+@media (max-width: 1074px) {
+  div#FooterColumns>div {
+    display: inline-block!important;
+    width: 50%;
+}
 }
