@@ -173,6 +173,10 @@ div#FooterColumns div {
     border-radius: 0!important;
     margin: 9px auto!important;
     width: 200px!important;
+    background: white!important;
+    border: 1px solid black!important;
+    text-align: left!important;
+    padding-left: 15px!important;
 }
 .BARRepWidget .BecomeARepForm .FormButton {
     float: none!important;
