@@ -193,7 +193,43 @@ div#FooterRepColumn {
 div#CopyrightBar {
     max-width: 100%!important;
 }
-
+/*Products Detail*/
+.ProductInformation {
+    background: whitesmoke;
+    padding: 3%!important;
+}
+.ProductDetails>div {
+    display: inline-block!important;
+    width: 45%!important;
+    vertical-align: top;
+}
+h1.ProductName {
+    font-size: 26px!important;
+    line-height: 30px!important;
+    font-family: Arial,Gotham,"Helvetica Neue",Helvetica,sans-serif!important;
+}
+#ProductDetails .Prices {
+    text-align: center!important;
+}
+#ProductDetails .ListPrice span:nth-child(2) {
+    display: none!important;
+}
+#ProductDetails .Prices .ListPrice, .ProductDetails .Pric {
+    display: inline-block!important;
+}
+.bv_stars_component_container button svg {
+    max-width: 15px!important;
+}
+.bv_stars_button_container svg:not(:last-child) {
+    padding-right: 8px!important;
+}
+.bv_button_component_container button {
+    margin-top: 25px!important;
+}
+.SelectionRepeat .Selection>a {
+    background: white!important;
+}
+/*Fin Product Detail*/
 /*Media query*/
 
 @media (max-width: 1074px) {
