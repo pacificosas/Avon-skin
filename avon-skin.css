@@ -26,7 +26,6 @@ span.FontNormal {
 }
 /*Contenedor REP*/
 .AvonFormContainer {
-    display: block !important;
     background: whitesmoke!important;
     border: 0!important;
     padding: 15px 0 !important;
@@ -67,6 +66,9 @@ form#FindByLocation * {
 .AlreadyKnow p {
     color: black!important;
     text-decoration: none!important;
+    font-family: Arial,Gotham,"Helvetica Neue",Helvetica,sans-serif!important;
+    font-style: normal!important;
+    font-size: 18px!important;
 }
 /*FOOTER*/
 div#FooterShadow:after {
@@ -197,34 +199,53 @@ div#CopyrightBar {
 @media (max-width: 1074px) {
   div#FooterColumns>div {
     display: inline-block!important;
-    width: 50%!important;
-  }
+    }
   #container {
-      width: auto!important;
-  }
+    width: auto!important;
+    }
 }
 @media (max-width: 1024px) {
+    /*Contenido*/
+.RightColumnFAR .FormButton .Button, .LeftColumnBAR .FormButton .Button {
+    font-size: inherit!important;
+    text-align: left!important;
+    padding: 5%!important;
+    height: auto!important;
+    }
+.ContentStack div p {
+    line-height: 21px!important;
+    }
+.ContentModule {
+    margin-top: 25px!important;
+    }
+span.FontNormal {
+    display: inline-block!important;
+    }
+    div#FooterColumns>div {
+    width: 100%!important;
+    }
+    .FARRepWidget {
+    width: 100%!important;
+    }
+    .FARRepWidget .Button {
+    width: 100%;
+    margin: 0!important;
+    padding: 3%!important;
+    }
     div#SubscribePanel {
     max-width: none!important;
     margin: 0 3%!important;
     width: auto!important;
     }
-    div#FooterColumns > div {
-    width: 50%!important;
-}
-/*Contenido*/
-.RightColumnFAR .FormButton .Button, .LeftColumnBAR .FormButton .Button {
-    font-size: inherit!important;
-    text-align: left!important;
-    padding: 2% 3%!important;
-}
-.ContentStack div p {
-    line-height: 21px!important;
-}
-.ContentModule {
-    margin-top: 25px!important;
-}
-span.FontNormal {
+    .bucket-pac {
+    height: auto!important;
+    }
+    .bucket-pac .button-pac {
+    position: unset!important;
     display: inline-block!important;
+    margin: 0 auto!important;
 }
+#FooterSocialMediaColumn, #FooterRepColumn {
+    margin-top: 30px!important;
+    }
 }
