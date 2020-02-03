@@ -221,6 +221,9 @@ div#CopyrightBar {
 span.FontNormal {
     display: inline-block!important;
     }
+    div#FooterColumns {
+    padding-top: 15px !important;
+    }
     div#FooterColumns>div {
     width: 100%!important;
     }
