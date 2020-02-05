@@ -1,4 +1,4 @@
-/* V1.4 */
+/* V1.5 */
 .Button {
     text-align: center;
     border-radius: 0!important;
@@ -195,11 +195,11 @@ div#CopyrightBar {
     max-width: 100%!important;
 }
 /*Products Detail*/
-.ProductInformation {
+#ProductDetailContainer .ProductInformation {
     background: whitesmoke;
     padding: 3%!important;
 }
-.ProductDetails>div {
+#ProductDetailContainer .ProductDetails>div {
     display: inline-block!important;
     width: 45%!important;
     vertical-align: top;
@@ -209,13 +209,13 @@ h1.ProductName {
     line-height: 30px!important;
     font-family: Arial,Gotham,"Helvetica Neue",Helvetica,sans-serif!important;
 }
-#ProductDetails .Prices {
+#ProductDetailContainer #ProductDetails .Prices {
     text-align: center!important;
 }
-#ProductDetails .ListPrice span:nth-child(2) {
+#ProductDetailContainer #ProductDetails .ListPrice span:nth-child(2) {
     display: none!important;
 }
-#ProductDetails .Prices .ListPrice, .ProductDetails .Pric {
+#ProductDetailContainer #ProductDetails .Prices .ListPrice, .ProductDetails .Pric {
     display: inline-block!important;
 }
 .bv_stars_component_container button svg {
@@ -232,16 +232,13 @@ h1.ProductName {
 }
 /*Fin Product Detail*/
 /*Media query*/
-
-@media (max-width: 1074px) {
-  div#FooterColumns>div {
+@media (max-width: 1440px) {
+    div#FooterColumns>div {
     display: inline-block!important;
     }
   #container {
     width: auto!important;
     }
-}
-@media (max-width: 1024px) {
     /*Contenido*/
 .RightColumnFAR .FormButton .Button, .LeftColumnBAR .FormButton .Button {
     font-size: inherit!important;
