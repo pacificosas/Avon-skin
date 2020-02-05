@@ -32,7 +32,7 @@ span.FontNormal {
     border-radius: 0 !important;
     border-bottom: 2px solid #d2d2d2!important;
 }
-.FormField {
+#FindByLocation .FormField {
     border-right: 1px solid white;
     margin-left: 10%!important;
     display: inline-block!important;
@@ -42,7 +42,7 @@ form#FindByLocation {
     display: inline-block!important;
     width: 45%!important;
 }
-.FormField label, .FormField div {
+#FindByLocation .FormField label, #FindByLocation .FormField div {
     display: block!important;
 }
 form#FindByLocation * {
