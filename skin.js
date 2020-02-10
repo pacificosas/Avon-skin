@@ -6,15 +6,7 @@ function ReestructuringProductDetails({htmlFav,htmlNoFav}){
 	var favorites=document.querySelector('.ProductDetails .AddToWishList')
 	var newFavoritesContainer=document.querySelector('.ProductDetails h1.ProductName')
 
-	removeFavLabel(favorites)
-
-	if (isFavorite(favorites)) {
-		favorites.setAttribute('corazon',"lleno")
-		favorites.querySelector('a').innerHTML=htmlFav || ''
-	}else{
-		favorites.setAttribute('corazon',"vacio")
-		favorites.querySelector('a').innerHTML=htmlNoFav || ''
-	}
+	handleFavorites()
 
 	newFavoritesContainer.appendChild(favorites)
 
@@ -41,8 +33,25 @@ function removeFavLabel(favElement){
 	favElement.querySelector('span a').innerText=''
 }
 
+function handleFavorites(htmlFav,htmlNoFav){
+	var favorites=document.querySelector('.ProductDetails .AddToWishList')
+    	removeFavLabel(favorites)
+	if (isFavorite(favorites)) {
+		favorites.setAttribute('corazon',"lleno")
+		favorites.querySelector('a').innerHTML=htmlFav || ''
+	}else{
+		favorites.setAttribute('corazon',"vacio")
+		favorites.querySelector('a').innerHTML=htmlNoFav || ''
+	}
+}
 
-ReestructuringProductDetails({
+var favicons={
 	htmlFav:'<i class="fas fa-heart"></i>',
   htmlNoFav:'<i class="far fa-heart"></i>'
+}
+
+ReestructuringProductDetails(favicons)
+
+document.querySelector('.ProductDetails .AddToWishList').addEventListener('click',()=>{
+	handleFavorites(favicons.htmlFav,favicons.htmlNoFav)
 })
