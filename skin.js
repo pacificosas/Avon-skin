@@ -43,6 +43,6 @@ function removeFavLabel(favElement){
 
 
 ReestructuringProductDetails({
-	htmlFav:'<li>coraXonXhito</li>',
-  htmlNoFav:'<li>coraXonXhito VaXCio</li>'
+	htmlFav:'<i class="fas fa-heart"></i>',
+  htmlNoFav:'<i class="far fa-heart"></i>'
 })
