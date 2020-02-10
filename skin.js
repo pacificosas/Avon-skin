@@ -1,5 +1,5 @@
 function ReestructuringProductDetails({htmlFav,htmlNoFav}){
-	console.log('estruuuuuuu')
+
 	var hasShades=document.querySelector('#ProductDetails .Shades') ? true : false;
 	var price=document.querySelector('.ProductDetails .Prices')
 	var newParent=document.querySelector('.ProductDetails #ProductNameAndRating')
