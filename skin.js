@@ -1,4 +1,5 @@
 function ReestructuringProductDetails({htmlFav,htmlNoFav}){
+	console.log('estruuuuuuu')
 	var hasShades=document.querySelector('#ProductDetails .Shades') ? true : false;
 	var price=document.querySelector('.ProductDetails .Prices')
 	var newParent=document.querySelector('.ProductDetails #ProductNameAndRating')
@@ -6,10 +7,7 @@ function ReestructuringProductDetails({htmlFav,htmlNoFav}){
 	var favorites=document.querySelector('.ProductDetails .AddToWishList')
 	var newFavoritesContainer=document.querySelector('.ProductDetails h1.ProductName')
 
-	handleFavorites()
-
 	newFavoritesContainer.appendChild(favorites)
-
 
 	if (hasShades) {
 		if (offer) {
@@ -23,7 +21,7 @@ function ReestructuringProductDetails({htmlFav,htmlNoFav}){
 }
 
 function isFavorite(favElement){
-	return favElement.querySelector('span span') != null
+	return favElement.querySelector('span span a') != null
 }
 
 function removeFavLabel(favElement){
@@ -50,8 +48,11 @@ var favicons={
   htmlNoFav:'<i class="far fa-heart"></i>'
 }
 
-ReestructuringProductDetails(favicons)
-
-document.querySelector('.ProductDetails .AddToWishList').addEventListener('click',()=>{
+window.onload=()=>{
+	ReestructuringProductDetails(favicons)
 	handleFavorites(favicons.htmlFav,favicons.htmlNoFav)
-})
+
+	document.querySelector('.ProductDetails .AddToWishList').addEventListener('click',()=>{
+		handleFavorites(favicons.htmlFav,favicons.htmlNoFav)
+	})
+}
