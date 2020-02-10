@@ -1,4 +1,4 @@
-/* V1.7 */
+/* V1.8 */
 .Button {
     text-align: center;
     border-radius: 1.4rem!important;
@@ -82,10 +82,10 @@ div#SubscribeBar {
     background: #eee!important;
     max-width: 100%!important;
     border-bottom: 2px solid #c3c3c3!important;
+    text-align: center;
 }
 div#SubscribePanel {
     max-width: 50%!important;
-    margin-left: 19%!important;
     width: 45%!important;
     display: inline-block!important;
     padding: 0!important;
@@ -222,20 +222,34 @@ div#CopyrightBar {
     display: inline-block!important;
     width: 45%!important;
     vertical-align: top;
+    margin-right: 4%;
 }
-h1.ProductName {
-    font-size: 26px!important;
-    line-height: 30px!important;
+#ProductNameAndRating h1.ProductName {
+    font-size: 20px!important;
+    line-height: 29px!important;
     font-family: Arial,Gotham,"Helvetica Neue",Helvetica,sans-serif!important;
 }
-#ProductDetailContainer #ProductDetails .Prices {
-    text-align: center!important;
+.ProductInformation .ProductDetails .Prices .ListPrice {
+    color: #808080;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5%;
 }
-#ProductDetailContainer #ProductDetails .ListPrice span:nth-child(2) {
+.ProductInformation .ProductDetails .Prices .Price {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ec008c;
+    display: inline-block;
+}
+.ProductInformation .ProductDetails .ListPrice span:nth-child(2) {
     display: none!important;
 }
-#ProductDetailContainer #ProductDetails .Prices .ListPrice, .ProductDetails .Pric {
-    display: inline-block!important;
+
+#ProductDetailContainer #ProductDetailForm .ProductInformation .ProductDetails {
+    padding-left: 3rem;
+}
+#ProductDetails .ProductActions {
+    margin-top:0;
 }
 #ProductDetailContainer .ProductActions a.Button span {
     font-size: 15px!important;
@@ -258,6 +272,11 @@ h1.ProductName {
 #ProductDetails .ProductActions .AddToCart .Quantity {
     margin:0 auto!important;
 }
+#ProductDetails .ProductActions .AddToCart .Button {
+    text-align: center;
+    display: table;
+    margin: 15px auto;
+}
 div#ProductDetailContainer #ProductDescription >div:nth-child(1) .nav a {
     background: white;
     font-size: 15px;
@@ -272,8 +291,24 @@ div#ProductDetailContainer #ProductDescription #reviews .bv-header .bv-action-ba
     font-weight: 500!important;
 }
 /*Fin Product Detail*/
+/*Reseñas*/
+div#ProductDescription .tab-content .tab-pane p {
+    line-height: 2.5rem;
+    letter-spacing: 0.02rem;
+}
 /*Media query*/
-
+@media (max-width: 768px) {
+    #ProductDetailContainer .ProductDetails>div {
+    display: block!important;
+    width: 100%!important;
+    }
+    .Layout_Phone #ProductDetails .Prices {
+        text-align: center;
+    }
+    #ProductDetails .ProductActions {
+        margin-top: 0;
+    }
+}
 @media (max-width: 1074px) {
   div#FooterColumns>div {
     display: inline-block!important;
