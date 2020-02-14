@@ -1,4 +1,4 @@
-/* V1.8 */
+/* V1.9 */
 .Button {
     text-align: center;
     border-radius: 1.4rem!important;
@@ -141,9 +141,10 @@ div#FooterColumns {
 div#FooterColumns div#FooterSocialMediaColumn {
     width: 15%!important;
 }
-div#FooterSocialMediaColumn nav {
-       margin-bottom: 5px;
+div#FooterSocialMediaColumn nav.ng-scope {
        text-align: center;
+       display: block!important;
+       margin-bottom: 5px;
 }
 .Layout_Desktop footer #FooterColumns>div#FooterSocialMediaColumn a {
     display: inline-block!important;
@@ -213,89 +214,7 @@ div#FooterRepColumn {
 div#CopyrightBar {
     max-width: 100%!important;
 }
-/*Products Detail*/
-#ProductDetailContainer .ProductInformation {
-    background: whitesmoke;
-    padding: 3%!important;
-}
-#ProductDetailContainer .ProductDetails>div {
-    display: inline-block!important;
-    width: 45%!important;
-    vertical-align: top;
-    margin-right: 4%;
-}
-#ProductNameAndRating h1.ProductName {
-    font-size: 20px!important;
-    line-height: 29px!important;
-    font-family: Arial,Gotham,"Helvetica Neue",Helvetica,sans-serif!important;
-}
-.ProductInformation .ProductDetails .Prices .ListPrice {
-    color: #808080;
-    text-decoration: line-through;
-    display: inline-block;
-    margin-right: 5%;
-}
-.ProductInformation .ProductDetails .Prices .Price {
-    font-size: 25px;
-    font-weight: 600;
-    color: #ec008c;
-    display: inline-block;
-}
-.ProductInformation .ProductDetails .ListPrice span:nth-child(2) {
-    display: none!important;
-}
 
-#ProductDetailContainer #ProductDetailForm .ProductInformation .ProductDetails {
-    padding-left: 3rem;
-}
-#ProductDetails .ProductActions {
-    margin-top:0;
-}
-#ProductDetailContainer .ProductActions a.Button span {
-    font-size: 15px!important;
-}
-.ProductActions .SelectionRepeat .Selection .select2-choice {
-    border-radius: 1.4rem!important;
-}
-.bv_stars_component_container button svg {
-    max-width: 15px!important;
-}
-.bv_stars_button_container svg:not(:last-child) {
-    padding-right: 8px!important;
-}
-.bv_button_component_container button {
-    margin-top: 25px!important;
-}
-.SelectionRepeat .Selection>a {
-    background: white!important;
-}
-#ProductDetails .ProductActions .AddToCart .Quantity {
-    margin:0 auto!important;
-}
-#ProductDetails .ProductActions .AddToCart .Button {
-    text-align: center;
-    display: table;
-    margin: 15px auto;
-}
-div#ProductDetailContainer #ProductDescription >div:nth-child(1) .nav a {
-    background: white;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: black;
-}
-div#ProductDetailContainer #ProductDescription #reviews .bv-header .bv-action-bar h2 {
-    font-size: 18px!important;
-    letter-spacing: 1px!important;
-    text-transform: uppercase!important;
-    font-weight: 500!important;
-}
-/*Fin Product Detail*/
-/*Reseñas*/
-div#ProductDescription .tab-content .tab-pane p {
-    line-height: 2.5rem;
-    letter-spacing: 0.02rem;
-}
 /*Media query*/
 @media (max-width: 768px) {
     #ProductDetailContainer .ProductDetails>div {
