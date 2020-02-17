@@ -1,4 +1,4 @@
-/* V1.9 */
+/* V1.10 */
 .Button {
     text-align: center;
     border-radius: 1.4rem!important;
@@ -31,6 +31,7 @@ span.FontNormal {
     padding: 15px 0 !important;
     border-radius: 0 !important;
     border-bottom: 2px solid #d2d2d2!important;
+    table-layout: inherit!important;
 }
 #FindByLocation .FormField {
     border-right: 1px solid white;
@@ -169,6 +170,7 @@ div#FooterColumns>div {
     padding: 0 2%!important;
     width: 25%!important;
     border-right: 1px solid #ec008c!important;
+    min-height: 250px;
 }
 div#FooterColumns>div:nth-child(4) {
     border-right: none!important;
