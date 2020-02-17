@@ -1,288 +1,396 @@
-/* V1.10 */
+/* V1.11 */
+
 .Button {
     text-align: center;
-    border-radius: 1.4rem!important;
-    padding: 8px 26px!important;
-    font-size: 13px!important;
-    vertical-align: middle!important;
-    border: none!important;
+    border-radius: 1.4rem;
+    padding: 8px 26px;
+    font-size: 13px;
+    vertical-align: middle;
+    border: none;
     letter-spacing: 1px;
 }
+
 h2 {
-    margin-bottom: 35px!important;
+    margin-bottom: 35px;
 }
+
 .ProductSummary .ProductItemDetails>div .HighlightedText {
-    font-size: 18px!important;
-    font-weight: 600!important;
+    font-size: 18px;
+    font-weight: 600;
 }
+
 .ContentStack div p {
-    margin-top: 15px!important;
+    margin-top: 15px;
 }
+
 span.FontNormal {
-    font-size: 16px!important;
+    font-size: 16px;
 }
+
 .ProductSummary .ProductItemDetails>div .PriceStrike span {
-    color: #888!important;
+    color: #888;
 }
+
 /*Contenedor REP*/
+
 .AvonFormContainer {
-    background: whitesmoke!important;
-    border: 0!important;
-    padding: 15px 0 !important;
-    border-radius: 0 !important;
-    border-bottom: 2px solid #d2d2d2!important;
-    table-layout: inherit!important;
+    background: whitesmoke;
+    border: 0;
+    padding: 15px 0 ;
+    border-radius: 0 ;
+    border-bottom: 2px solid #d2d2d2;
+    table-layout: inherit;
 }
+
 #FindByLocation .FormField {
     border-right: 1px solid white;
-    margin-left: 10%!important;
-    display: inline-block!important;
-    padding-right: 13%!important;
+    margin-left: 10%;
+    display: inline-block;
+    padding-right: 13%;
 }
+
 form#FindByLocation {
-    display: inline-block!important;
-    width: 45%!important;
+    display: inline-block;
+    width: 45%;
 }
+
 #FindByLocation .FormField label, #FindByLocation .FormField div {
-    display: block!important;
+    display: block;
 }
+
 form#FindByLocation * {
-    color: black!important;
+    color: black;
     font-style: normal;
-    float: none!important;
-    font-family: Arial,Gotham,"Helvetica Neue",Helvetica,sans-serif!important;
-    font-size: 16px!important;
+    float: none;
+    font-family: Arial,Gotham,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 16px;
 }
+
 .InputWithIcon {
-    margin-left: 0!important;
-    margin-top: 12px!important;
+    margin-left: 0;
+    margin-top: 12px;
 }
+
 .AlreadyKnow {
-    margin-left: 4% !important;
-    display: inline-block !important;
-    color: #ec008c !important;
-    margin-top: 15px !important;
-    vertical-align: top!important;
+    margin-left: 4% ;
+    display: inline-block ;
+    color: #ec008c ;
+    margin-top: 15px ;
+    vertical-align: top;
 }
+
 .AlreadyKnow p {
-    color: black!important;
-    text-decoration: none!important;
-    font-family: Arial,Gotham,"Helvetica Neue",Helvetica,sans-serif!important;
-    font-style: normal!important;
-    font-size: 18px!important;
+    color: black;
+    text-decoration: none;
+    font-family: Arial,Gotham,"Helvetica Neue",Helvetica,sans-serif;
+    font-style: normal;
+    font-size: 18px;
 }
+
 /*FOOTER*/
+
 div#FooterShadow:after {
-    display: none!important;
+    display: none;
 }
+
 .Layout_Desktop footer {
-    border: none!important;
+    border: none;
 }
+
 div#SubscribeBar {
-    padding: 25px 0!important;
-    background: #eee!important;
-    max-width: 100%!important;
-    border-bottom: 2px solid #c3c3c3!important;
+    padding: 25px 0;
+    background: #eee;
+    max-width: 100%;
+    border-bottom: 2px solid #c3c3c3;
     text-align: center;
 }
+
 div#SubscribePanel {
-    max-width: 50%!important;
-    width: 45%!important;
-    display: inline-block!important;
-    padding: 0!important;
+    max-width: 50%;
+    width: 45%;
+    display: inline-block;
+    padding: 0;
 }
+
 div#ContactUsPanel {
-    display: none!important;
+    display: none;
 }
+
 div#ContactUsPanel a {
-    display: inline-block !important;
-    text-align: center!important;
-    width: 110%!important;
-    border: none!important;
-    padding: 0!important;
-    background: black !important;
+    display: inline-block ;
+    text-align: center;
+    width: 110%;
+    border: none;
+    padding: 0;
+    background: black ;
 }
+
 #ContactUsPanel a svg-icon {
-    display: none!important;
+    display: none;
 }
+
 div#ContactUsPanel a span {
-    text-align: center !important;
-    font-weight: 600 !important;
-    color: white !important;
-    padding: 11px 7px !important;
-    display: inline-block!important;
+    text-align: center ;
+    font-weight: 600 ;
+    color: white ;
+    padding: 11px 7px ;
+    display: inline-block;
 }
+
 div#SubscribeInput {
-    background: white!important;
-    border: 1px solid black!important;
+    background: white;
+    border: 1px solid black;
 }
+
 div#SubscribeFormLabel label span {
-    display: block!important;
-    font-weight: 600!important;
-    color: black!important;
-    padding-right: 15p!important;
+    display: block;
+    font-weight: 600;
+    color: black;
+    padding-right: 15p;
 }
+
 /*Find a Rep*/
+
 #FindARep .AvonFormContainer #FindByNameOrContact label {
-    color:black!important;
+    color: black;
 }
 
 #FindARep div#FindByNameOrContact a {
     color: #ec008c;
     margin-top: 8px;
 }
+
 /*Footer*/
 
 /*Columnasfooter*/
+
 div#FooterColumns {
-    max-width: 85%!important;
-    padding-top: 45px!important;
-    margin: 0 auto!important;
+    max-width: 85%;
+    padding-top: 45px;
+    margin: 0 auto;
 }
+
 div#FooterColumns div#FooterSocialMediaColumn {
-    width: 15%!important;
+    width: 15%;
 }
+
 div#FooterSocialMediaColumn nav.ng-scope {
-       text-align: center;
-       display: block!important;
-       margin-bottom: 5px;
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
 }
+
 .Layout_Desktop footer #FooterColumns>div#FooterSocialMediaColumn a {
-    display: inline-block!important;
+    display: inline-block;
 }
+
 span.SocialText {
-    display: none!important;
+    display: none;
 }
+
 .ConnectIcon svg-icon {
-    margin-right: 11px!important;
+    margin-right: 11px;
 }
+
 #FooterSocialMediaColumn svg-icon {
-    background: #ec008c!important;
+    background: #ec008c;
 }
+
 #FooterColumns h3 {
-    padding-bottom: 20px!important;
+    padding-bottom: 20px;
 }
+
 div#FooterColumns>div {
-    position: relative !important;
-    border: none!important;
-    vertical-align: top!important;
-    display: inline-block!important;
-    padding: 0 2%!important;
-    width: 25%!important;
-    border-right: 1px solid #ec008c!important;
+    position: relative ;
+    border: none;
+    vertical-align: top;
+    display: inline-block;
+    padding: 0 2%;
+    width: 25%;
+    border-right: 1px solid #ec008c;
     min-height: 250px;
 }
+
 div#FooterColumns>div:nth-child(4) {
-    border-right: none!important;
+    border-right: none;
 }
+
 .ColumnsContainerFAR .RightColumnFAR {
-    position: relative!important;
+    position: relative;
 }
+
 .RightColumnFAR .FormButton .Button {
-    border-radius: 0 1.4rem 1.4rem 0!important;
-    padding: 11.5px!important;
+    border-radius: 0 1.4rem 1.4rem 0;
+    padding: 11.5px;
 }
+
 .FARRepWidget, .BARRepWidget {
-    background: none!important;
-    border: none!important;
-    padding: 0!important;
-    margin-bottom: 15px!important;
-    width: auto!important;
-    max-width: none!important;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+    width: auto;
+    max-width: none;
 }
+
 .FARRepWidget input#InputPostcode {
-    border-radius: 0!important;
-    margin: 9px auto!important;
-    width: 200px!important;
-    background: white!important;
-    border: 1px solid black!important;
-    text-align: left!important;
-    padding-left: 15px!important;
+    border-radius: 0;
+    margin: 9px auto;
+    width: 200px;
+    background: white;
+    border: 1px solid black;
+    text-align: left;
+    padding-left: 15px;
 }
+
 .BARRepWidget .BecomeARepForm .FormButton {
-    float: none!important;
-    text-align: left!important;
+    float: none;
+    text-align: left;
 }
+
 .BARRepWidget .BecomeARepForm p {
     margin-bottom: 20px;
 }
+
 form#FindARepForm h2, .BecomeARepForm h2 {
-    margin-bottom: 2px!important;
+    margin-bottom: 2px;
 }
+
 div#FooterRepColumn {
-    padding: 0!important;
+    padding: 0;
     /*width: 35%!important;*/
 }
+
 div#CopyrightBar {
-    max-width: 100%!important;
+    max-width: 100%;
 }
 
 /*Media query*/
-@media (max-width: 768px) {
-    #ProductDetailContainer .ProductDetails>div {
-    display: block!important;
-    width: 100%!important;
-    }
-    .Layout_Phone #ProductDetails .Prices {
-        text-align: center;
-    }
-    #ProductDetails .ProductActions {
-        margin-top: 0;
-    }
+
+@media  (max-width: 2560px) {
+  main {    
+    max-width: initial !important;    
+    width: 74% !important;
+  }
+  .Layout_Phone h2.ModuleHeading, .bucket-pac h3 {    
+    font-size: 1.2rem !important;
+  }
+  div#SubscribePanel {    
+    max-width: fit-content !important;    
+    width: auto !important;    
+    display: inline-block !important;    
+    padding: 0.1rem 1.1rem !important;
+  }
+  div#FooterColumns>div {    
+    width: 100% !important;    
+    border-right: none !important;
+  }
+  .RightColumnFAR .FormButton .Button {    
+    padding: 62.5px !important;    
+    -webkit-border-radius: 1.4rem !important;    
+    -webkit-border-radius: 1.4rem !important;    
+    -webkit-border-radius: 1.4rem !important;    
+    -webkit-border-radius: 1.4rem !important;    
+    -webkit-border-radius: 1.4rem !important;    
+    -webkit-border-radius: 1.4rem !important;    
+    -webkit-border-radius: 1.4rem !important;    
+    -webkit-border-radius: 1.4rem !important;    
+    -webkit-border-radius: 1.4rem !important;    
+    -webkit-border-radius: 1.4rem !important;    -webkit-border-radius: 1.4rem !important;
+    border-radius: 1.4rem !important;    
+    font-size: 45px !important;
+  }
+  .Layout_Phone .BARRepWidget .Button span {    
+    font-size: 45px;    
+    display: inline-block !important;    
+    margin-top: 2%;
+  }
 }
-@media (max-width: 1074px) {
-  div#FooterColumns>div {
-    display: inline-block!important;
-    }
-  #container {
-    width: auto!important;
-    }
+
+@media  (max-width: 1440px) {
+  .RightColumnFAR .FormButton .Button {    
+    padding: 23.5px !important;
+  }
 }
-@media (max-width: 1024px) {
-    /*Contenido*/
-.RightColumnFAR .FormButton .Button, .LeftColumnBAR .FormButton .Button {
-    font-size: inherit!important;
-    text-align: left!important;
-    padding: 5%!important;
-    height: auto!important;
-    }
-.ContentStack div p {
-    line-height: 21px!important;
-    }
-.ContentModule {
-    margin-top: 25px!important;
-    }
-span.FontNormal {
-    display: inline-block!important;
-    }
-    div#FooterColumns {
+
+@media  (max-width: 1074px) {
+  div#FooterColumns>div {    
+    display: inline-block !important;
+  }
+  #container {    
+    width: auto !important;
+  }
+}
+
+@media  (max-width: 1024px) {
+/*Contenido*/
+  .RightColumnFAR .FormButton .Button, .LeftColumnBAR .FormButton .Button {    
+    text-align: left !important;    
+    padding: 5% !important;    
+    height: auto !important;
+  }
+  .Layout_Phone footer .BARRepWidget svg-icon {    
+    top: 2.5rem !important;
+  }
+  .ContentStack div p {    
+    line-height: 21px !important;
+  }
+  .ContentModule {    
+    margin-top: 25px !important;
+  }
+  span.FontNormal {    
+    display: inline-block !important;
+  }
+  div#FooterColumns {    
     padding-top: 15px !important;
-    }
-    div#FooterColumns>div {
-    width: 100%!important;
-    }
-    .FARRepWidget {
-    width: 100%!important;
-    }
-    .FARRepWidget .Button {
-    width: 100%;
-    margin: 0!important;
-    padding: 3%!important;
-    }
-    div#SubscribePanel {
-    max-width: none!important;
-    margin: 0 3%!important;
-    width: auto!important;
-    }
-    .bucket-pac {
-    height: auto!important;
-    }
-    .bucket-pac .button-pac {
-    position: unset!important;
-    display: inline-block!important;
-    margin: 0 auto!important;
+  }
+  div#FooterColumns>div {    
+    width: 100% !important;
+  }
+  .FARRepWidget {    
+    width: 100% !important;
+  }
+  .FARRepWidget .Button {    
+    width: 100%;    
+    margin: 0 !important;    
+    padding: 3% !important;
+  }
+  div#SubscribePanel {    
+    max-width: none !important;    
+    margin: 0 3% !important;    
+    width: auto !important;
+  }
+  .bucket-pac {    
+    height: auto !important;
+  }
+  .bucket-pac .button-pac {    
+    position: unset !important;    
+    display: inline-block !important;    
+    margin: 0 auto !important;
+  }
+  #FooterSocialMediaColumn, #FooterRepColumn {    
+    margin-top: 30px !important;
+  }
 }
-#FooterSocialMediaColumn, #FooterRepColumn {
-    margin-top: 30px!important;
-    }
+
+@media  (max-width: 768px) {
+  #ProductDetailContainer .ProductDetails>div {    
+    display: block !important;    
+    width: 100% !important;
+  }
+  .Layout_Phone #ProductDetails .Prices {    
+    text-align: center;
+  }
+  #ProductDetails .ProductActions {    
+    margin-top: 0;
+  }
+  .RightColumnFAR .FormButton .Button {    
+    font-size: 1.6rem !important;
+  }
+  .Layout_Phone .BARRepWidget .Button span {    
+    font-size: 1.6rem;
+  }
+  div#FooterColumns>div {    
+    min-height: auto !important;
+  }
 }
