@@ -1,4 +1,4 @@
-/* V1.11 */
+/* V1.12 */
 
 .Button {
     text-align: center;
@@ -267,52 +267,6 @@ div#CopyrightBar {
 
 /*Media query*/
 
-@media  (max-width: 2560px) {
-  main {    
-    max-width: initial !important;    
-    width: 74% !important;
-  }
-  .Layout_Phone h2.ModuleHeading, .bucket-pac h3 {    
-    font-size: 1.2rem !important;
-  }
-  div#SubscribePanel {    
-    max-width: fit-content !important;    
-    width: auto !important;    
-    display: inline-block !important;    
-    padding: 0.1rem 1.1rem !important;
-  }
-  div#FooterColumns>div {    
-    width: 100% !important;    
-    border-right: none !important;
-  }
-  .RightColumnFAR .FormButton .Button {    
-    padding: 62.5px !important;    
-    -webkit-border-radius: 1.4rem !important;    
-    -webkit-border-radius: 1.4rem !important;    
-    -webkit-border-radius: 1.4rem !important;    
-    -webkit-border-radius: 1.4rem !important;    
-    -webkit-border-radius: 1.4rem !important;    
-    -webkit-border-radius: 1.4rem !important;    
-    -webkit-border-radius: 1.4rem !important;    
-    -webkit-border-radius: 1.4rem !important;    
-    -webkit-border-radius: 1.4rem !important;    
-    -webkit-border-radius: 1.4rem !important;    -webkit-border-radius: 1.4rem !important;
-    border-radius: 1.4rem !important;    
-    font-size: 45px !important;
-  }
-  .Layout_Phone .BARRepWidget .Button span {    
-    font-size: 45px;    
-    display: inline-block !important;    
-    margin-top: 2%;
-  }
-}
-
-@media  (max-width: 1440px) {
-  .RightColumnFAR .FormButton .Button {    
-    padding: 23.5px !important;
-  }
-}
-
 @media  (max-width: 1074px) {
   div#FooterColumns>div {    
     display: inline-block !important;
@@ -323,53 +277,20 @@ div#CopyrightBar {
 }
 
 @media  (max-width: 1024px) {
-/*Contenido*/
-  .RightColumnFAR .FormButton .Button, .LeftColumnBAR .FormButton .Button {    
-    text-align: left !important;    
-    padding: 5% !important;    
-    height: auto !important;
-  }
-  .Layout_Phone footer .BARRepWidget svg-icon {    
-    top: 2.5rem !important;
-  }
-  .ContentStack div p {    
-    line-height: 21px !important;
-  }
-  .ContentModule {    
-    margin-top: 25px !important;
-  }
-  span.FontNormal {    
-    display: inline-block !important;
-  }
-  div#FooterColumns {    
-    padding-top: 15px !important;
-  }
   div#FooterColumns>div {    
-    width: 100% !important;
+    width: 36% !important;
   }
-  .FARRepWidget {    
-    width: 100% !important;
+  div#FooterColumns div#FooterRepColumn {    
+    width: 100% !important;    
+    margin-top: 19px;    
+    border-top: 1px solid #ec008c !important;    
+    padding-top: 16px !important;
   }
-  .FARRepWidget .Button {    
-    width: 100%;    
-    margin: 0 !important;    
-    padding: 3% !important;
+  div#FooterColumns div#FooterSocialMediaColumn {    
+    width: 25% !important;
   }
-  div#SubscribePanel {    
-    max-width: none !important;    
-    margin: 0 3% !important;    
-    width: auto !important;
-  }
-  .bucket-pac {    
-    height: auto !important;
-  }
-  .bucket-pac .button-pac {    
-    position: unset !important;    
-    display: inline-block !important;    
+  div#FooterSocialMediaColumn > nav>a {    
     margin: 0 auto !important;
-  }
-  #FooterSocialMediaColumn, #FooterRepColumn {    
-    margin-top: 30px !important;
   }
 }
 
@@ -384,13 +305,25 @@ div#CopyrightBar {
   #ProductDetails .ProductActions {    
     margin-top: 0;
   }
-  .RightColumnFAR .FormButton .Button {    
-    font-size: 1.6rem !important;
-  }
-  .Layout_Phone .BARRepWidget .Button span {    
-    font-size: 1.6rem;
+  .RightColumnFAR .FormButton .Button, .Layout_Phone .BARRepWidget .Button span {
   }
   div#FooterColumns>div {    
     min-height: auto !important;
   }
+  div#SubscribePanel {    
+    max-width: initial !important;    
+    width: initial !important;    
+    display: inline-block !important;
+  }
+  .Layout_Phone footer #SubscribeForm label {    
+    font-size: 1.2rem !important;
+  }
+  div#FooterColumns div#FooterRepColumn, div#FooterColumns {    
+    border: initial !important;    
+    padding-top: initial !important;
+  }
+  .RightColumnFAR .FormButton .Button {    -webkit-border-radius: 1.4rem !important;
+    border-radius: 1.4rem !important;
+  }
 }
+
