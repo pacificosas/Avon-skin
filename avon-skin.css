@@ -34,7 +34,7 @@ span.FontNormal {
 /*Contenedor REP*/
 
 .AvonFormContainer {
-    background: whitesmoke;
+    background: whitesmoke!important;
     border: 0;
     padding: 15px 0 ;
     border-radius: 0 ;
