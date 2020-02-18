@@ -185,7 +185,7 @@ div#FooterSocialMediaColumn nav.ng-scope {
 }
 
 span.SocialText {
-    display: none;
+    display: none!important;
 }
 
 .ConnectIcon svg-icon {
