@@ -216,7 +216,7 @@ div#FooterColumns>div:nth-child(4) {
 }
 
 .ColumnsContainerFAR .RightColumnFAR {
-    position: relative;
+    position: relative!important;
 }
 
 .RightColumnFAR .FormButton .Button {
