@@ -51,7 +51,7 @@ span.FontNormal {
 
 form#FindByLocation {
     display: inline-block;
-    width: 45%;
+    width: inherit;
 }
 
 #FindByLocation .FormField label, #FindByLocation .FormField div {
@@ -86,11 +86,14 @@ form#FindByLocation * {
     font-style: normal;
     font-size: 18px;
 }
+.AlreadyKnow a {
+    color: #ec008c!important;
+}
 
 /*FOOTER*/
 
-footer div#FooterShadow:after {
-    display: none;
+footer div#FooterShadow {
+    display: none!important;
 }
 
 .Layout_Desktop footer {
