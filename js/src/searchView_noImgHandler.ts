@@ -1,5 +1,5 @@
 // handle products with no image when its rendered the search view
-
+import {Ranimator} from './Ranimator.min.js'
 const selectors={
 	products:'.ProductListCell',
 	productImg:'img',
@@ -16,7 +16,7 @@ export function main(urlPatt:string){
 
 		Array.from(document.querySelectorAll(selectors.products)).forEach((item: any) => {
 
-			var img=document.querySelector(selectors.productImg)
+			var img=item.querySelector(selectors.productImg)
 
 			if (img.getAttribute('src')==target) {
 			    item.style.display='none'
