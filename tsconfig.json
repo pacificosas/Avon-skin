@@ -8,7 +8,7 @@
 	  "target": "es5",
 	  "watch":true,
       "rootDir": "./js/src",
-	  "allowJs":true
+	  "allowJs":true,
   },
 	    "include": [
         "**/*.ts"
