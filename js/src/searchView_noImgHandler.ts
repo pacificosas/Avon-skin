@@ -1,5 +1,5 @@
 // handle products with no image when its rendered the search view
-import {Ranimator} from './Ranimator/Ranimator'
+import {Ranimator} from './libs//Ranimator/Ranimator'
 const selectors={
 	products:'.ProductListCell',
 	productImg:'img',
