@@ -408,75 +408,74 @@ div#ProductDescription .tab-content .tab-pane p {
 /*Media query*/
 
 @media  (max-width: 1074px) {
-  div#FooterColumns>div {    
+  div#FooterColumns>div {
     display: inline-block !important;
   }
-  #container {    
+  #container {
     width: auto !important;
   }
 }
 
 @media  (max-width: 1024px) {
-  div#FooterColumns>div {    
+  div#FooterColumns>div {
     width: 36% !important;
   }
-  div#FooterColumns div#FooterRepColumn {    
-    width: 100% !important;    
-    margin-top: 19px;    
-    border-top: 1px solid #ec008c !important;    
+  div#FooterColumns div#FooterRepColumn {
+    width: 100% !important;
+    margin-top: 19px;
+    border-top: 1px solid #ec008c !important;
     padding-top: 16px !important;
   }
-  div#FooterColumns div#FooterSocialMediaColumn {    
+  div#FooterColumns div#FooterSocialMediaColumn {
     width: 25% !important;
   }
-  div#FooterSocialMediaColumn > nav>a {    
+  div#FooterSocialMediaColumn > nav>a {
     margin: 0 auto !important;
   }
 }
 
 @media  (max-width: 768px) {
-  #ProductDetailContainer .ProductDetails>div {    
-    display: block !important;    
+  #ProductDetailContainer .ProductDetails>div {
+    display: block !important;
     width: 100% !important;
   }
-  .Layout_Phone #ProductDetails .Prices {    
+  .Layout_Phone #ProductDetails .Prices {
     text-align: center;
   }
-  #ProductDetails .ProductActions {    
+  #ProductDetails .ProductActions {
     margin-top: 0;
   }
   .RightColumnFAR .FormButton .Button, .Layout_Phone .BARRepWidget .Button span {
   }
-  div#FooterColumns>div {    
+  div#FooterColumns>div {
     min-height: auto !important;
   }
-  div#SubscribePanel {    
-    max-width: initial !important;    
-    width: initial !important;    
+  footer div#SubscribePanel {    
+    max-width: initial !important;
+    width: initial !important;
     display: inline-block !important;
   }
-  .Layout_Phone footer #SubscribeForm label {    
+  .Layout_Phone footer #SubscribeForm label {
     font-size: 1.2rem !important;
   }
-  div#FooterColumns div#FooterRepColumn, div#FooterColumns {    
-    border: initial !important;    
+  div#FooterColumns div#FooterRepColumn, div#FooterColumns {
+    border: initial !important;
     padding-top: initial !important;
   }
   .RightColumnFAR .FormButton .Button {    -webkit-border-radius: 1.4rem !important;
     border-radius: 1.4rem !important;
   }
-  div#ProductNameAndRating h1.ProductName {    
-    font-size: 1.3rem !important;    
+  div#ProductNameAndRating h1.ProductName {
+    font-size: 1.3rem !important;
     text-align: center;
   }
-  #ProductNameAndRating .product-meta-rating {    
+  #ProductNameAndRating .product-meta-rating {
     text-align: center !important;
   }
-  #ProductNameAndRating .product-meta-rating button {    
+  #ProductNameAndRating .product-meta-rating button {
     margin-top: 0 !important;
   }
-  .ProductInformation .ProductDetails .Prices .Price {    
+  .ProductInformation .ProductDetails .Prices .Price {
     font-size: 2rem !important;
   }
 }
-
