@@ -1,5 +1,10 @@
 // handle products with no image when its rendered the search view
 import {Ranimator} from './libs//Ranimator/Ranimator'
+import {searchObserver} from './libs/observers/searchObserver'
+import {onlyAdmin} from './libs/onlyAdmin'
+import {IAdmin} from './Interfaces/IAdmin'
+
+
 const selectors={
 	products:'.ProductListCell',
 	productImg:'img',
@@ -8,31 +13,58 @@ const selectors={
 
 const target="/styles/core/images/productfallback.svg"
 
-export function main(urlPatt:string){
+export function main(admin:IAdmin,urlPatt:string){
+	onlyAdmin({
+		admin:admin,
+		inUrlPatt:urlPatt,
+		onDenied:()=>{
+			apply(urlPatt)
+		}
+	})
+}
 
+function apply(urlPatt:string){
 	if (new RegExp(urlPatt).exec(window.location.pathname)) {
 
-		var Results=document.querySelector(selectors.searchResult)
+		var element=document.querySelector('product-list')
 
-		Array.from(document.querySelectorAll(selectors.products)).forEach((item: any,index : number) => {
+		removeItems()
 
-			var img=item.querySelector(selectors.productImg)
-			if (img.getAttribute('src')==target) {
-				setTimeout(()=>{
-					Ranimator.fadeOut(item,300,{
-						onDone:()=>{
-						    item.style.display='none'
-						}
-					})
-					Results.innerText=parseInt(Results.innerText)-1
-				},500*index)
-			}
+		var paginationBtns=Array.from(document.querySelectorAll('.PagingButtons'))
 
-		});
+		paginationBtns.forEach( ( item:any )=>{
+
+			item.addEventListener('click',()=>{
+
+				searchObserver().then( (observer:MutationObserver) =>{
+
+					console.log('removing objects with no image')
+					observer.disconnect()
+
+					setTimeout(()=>{
+
+						removeItems()
+
+					},1000)
+				})
+
+			})
+		})
+
 	}
 }
 
-// usage
-// window.onload=()=>{
-// 	main('/search/.*')
-// }
+function removeItems(renumber?:boolean){
+	console.log('removing product with no image')
+	console.log('--')
+
+	var Results=document.querySelector(selectors.searchResult)
+
+	Array.from(document.querySelectorAll(selectors.products)).forEach((item: any,index : number) => {
+		var img=item.querySelector(selectors.productImg)
+		if (img.getAttribute('src')==target) {
+		    item.remove()
+		}
+
+	});
+}

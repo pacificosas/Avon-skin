@@ -1,31 +1,47 @@
-// handle products with no image when its rendered the search view
-import { Ranimator } from './libs//Ranimator/Ranimator';
+import { searchObserver } from './libs/observers/searchObserver';
+import { onlyAdmin } from './libs/onlyAdmin';
 var selectors = {
     products: '.ProductListCell',
     productImg: 'img',
     searchResult: '#SearchHeader .Results span strong'
 };
 var target = "/styles/core/images/productfallback.svg";
-export function main(urlPatt) {
+export function main(admin, urlPatt) {
+    onlyAdmin({
+        admin: admin,
+        inUrlPatt: urlPatt,
+        onDenied: function () {
+            apply(urlPatt);
+        }
+    });
+}
+function apply(urlPatt) {
     if (new RegExp(urlPatt).exec(window.location.pathname)) {
-        var Results = document.querySelector(selectors.searchResult);
-        Array.from(document.querySelectorAll(selectors.products)).forEach(function (item, index) {
-            var img = item.querySelector(selectors.productImg);
-            if (img.getAttribute('src') == target) {
-                setTimeout(function () {
-                    Ranimator.fadeOut(item, 300, {
-                        onDone: function () {
-                            item.style.display = 'none';
-                        }
-                    });
-                    Results.innerText = parseInt(Results.innerText) - 1;
-                }, 500 * index);
-            }
+        var element = document.querySelector('product-list');
+        removeItems();
+        var paginationBtns = Array.from(document.querySelectorAll('.PagingButtons'));
+        paginationBtns.forEach(function (item) {
+            item.addEventListener('click', function () {
+                searchObserver().then(function (observer) {
+                    console.log('removing objects with no image');
+                    observer.disconnect();
+                    setTimeout(function () {
+                        removeItems();
+                    }, 1000);
+                });
+            });
         });
     }
 }
-// usage
-// window.onload=()=>{
-// 	main('/search/.*')
-// }
+function removeItems(renumber) {
+    console.log('removing product with no image');
+    console.log('--');
+    var Results = document.querySelector(selectors.searchResult);
+    Array.from(document.querySelectorAll(selectors.products)).forEach(function (item, index) {
+        var img = item.querySelector(selectors.productImg);
+        if (img.getAttribute('src') == target) {
+            item.remove();
+        }
+    });
+}
 //# sourceMappingURL=searchView_noImgHandler.js.map
