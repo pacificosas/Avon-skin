@@ -1,11 +1,14 @@
 import {main as SearchViewHandler} from './searchView_noImgHandler'
 import {brochureRedirection} from './brochureRedirection'
+import {IAdmin} from './Interfaces/IAdmin'
 
-brochureRedirection({
+const ADMIN:IAdmin={
 	key:'avonrol',
-	value:new RegExp('correcciones.')
-},'/brochure*','/catalogos-avon')
-
-window.onload=()=>{
-	SearchViewHandler('/search/.*')
+	value:new RegExp('correcciones')
 }
+
+brochureRedirection(ADMIN,'/brochure*')
+
+window.addEventListener('load',()=>{
+	SearchViewHandler(ADMIN,'/search/.*')
+})

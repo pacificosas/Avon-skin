@@ -1,10 +1,11 @@
 import { main as SearchViewHandler } from './searchView_noImgHandler';
 import { brochureRedirection } from './brochureRedirection';
-brochureRedirection({
+var ADMIN = {
     key: 'avonrol',
-    value: new RegExp('correcciones.')
-}, '/brochure*', '/catalogos-avon');
-window.onload = function () {
-    SearchViewHandler('/search/.*');
+    value: new RegExp('correcciones')
 };
+brochureRedirection(ADMIN, '/brochure*');
+window.addEventListener('load', function () {
+    SearchViewHandler(ADMIN, '/search/.*');
+});
 //# sourceMappingURL=index.js.map
