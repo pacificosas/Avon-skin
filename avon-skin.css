@@ -1,4 +1,4 @@
-/* V.1.2.3 */
+/* V.1.2.4 */
 
 .Button {
     text-align: center;
@@ -405,10 +405,10 @@ div#ProductDescription .tab-content .tab-pane p {
     line-height: 2.5rem;
     letter-spacing: 0.02rem;
 }
-/*Comentar tachado de precios*/
-.ProductListModule .ProductList .ProductListItem .ProductDetails .ProductDetailsTop .Prices .ListPrice, .ProductSummary .ProductItemDetails>div .PriceStrike span {
+/*Tachado de precios*/
+/*.ProductListModule .ProductList .ProductListItem .ProductDetails .ProductDetailsTop .Prices .ListPrice, .ProductSummary .ProductItemDetails>div .PriceStrike span {
     display: none!important;
-}
+}*/
 
 /*Media query*/
 
