@@ -6,7 +6,6 @@
     "start": "npm-watch",
     "buildjs": "webpack",
     "buildcss": "sass css/sass:css/dist"
-
   },
   "watch": {
     "buildjs": {

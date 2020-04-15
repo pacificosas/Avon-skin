@@ -1,12 +1,12 @@
-import { gup } from './gup';
-export function onlyAdmin(config) {
+export function onlyAdmin(config, gup) {
     var urlPatt = new RegExp(config.inUrlPatt);
     var cookieKey = config.cookieKey || 'avon-admin-rol';
     if (urlPatt.exec(window.location.pathname)) {
+        console.log(cookieKey);
         if (checkCokie(cookieKey)) {
             console.log('admin have login cookies');
         }
-        else if (config.admin.value.test(gup()[config.admin.key])) {
+        else if (config.admin.value.test(gup[config.admin.key])) {
             console.log('admin is log in');
             setCokie(cookieKey);
         }
