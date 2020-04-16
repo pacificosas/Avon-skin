@@ -4,7 +4,7 @@ export function brochureRedirection(admin, urlPatt, gup) {
         admin: admin,
         inUrlPatt: urlPatt,
         onDenied: function () {
-            window.location.href = '/catalogos-avon';
+            //window.location.href='/catalogos-avon'
         }
     }, gup);
 }

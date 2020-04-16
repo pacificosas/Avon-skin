@@ -7,7 +7,7 @@ var ADMIN = {
 };
 var gupVal = gup();
 window.addEventListener('load', function () {
-    console.log("var");
+    console.log(gupVal);
     brochureRedirection(ADMIN, '/brochure*', gupVal);
     SearchViewHandler(ADMIN, '/search/.*');
 });

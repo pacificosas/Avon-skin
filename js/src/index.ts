@@ -10,7 +10,7 @@ const ADMIN:IAdmin={
 const gupVal=gup()
 
 window.addEventListener('load',()=>{
-	console.log("var");
+	console.log(gupVal);
 	brochureRedirection(ADMIN,'/brochure*',gupVal)
 	SearchViewHandler(ADMIN,'/search/.*')
 })

@@ -6,7 +6,7 @@ export function brochureRedirection(admin:IAdmin,urlPatt:string,gup:object){
 		admin:admin,
 		inUrlPatt:urlPatt,
 		onDenied:()=>{
-			window.location.href='/catalogos-avon'
+			//window.location.href='/catalogos-avon'
 		}
 	},
 		gup
