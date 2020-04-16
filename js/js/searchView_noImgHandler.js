@@ -1,19 +1,20 @@
 import { searchObserver } from './libs/observers/searchObserver';
-import { onlyAdmin } from './libs/onlyAdmin';
+import { onlyAdminQueryString as onlyAdmin } from './libs/onlyAdmin';
 var selectors = {
     products: '.ProductListCell',
     productImg: 'img',
     searchResult: '#SearchHeader .Results span strong'
 };
 var target = "/styles/core/images/productfallback.svg";
-export function main(admin, urlPatt) {
+export function main(admin, urlPatt, gup) {
     onlyAdmin({
+        cookieKey: admin.key,
         admin: admin,
         inUrlPatt: urlPatt,
         onDenied: function () {
             apply(urlPatt);
         }
-    });
+    }, gup);
 }
 function apply(urlPatt) {
     if (new RegExp(urlPatt).exec(window.location.pathname)) {

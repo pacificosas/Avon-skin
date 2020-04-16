@@ -4,13 +4,17 @@ import {IAdmin} from './Interfaces/IAdmin'
 import {gup} from './libs/gup'
 
 const ADMIN:IAdmin={
-	key:'avonrol',
+	key:'avonRol',
 	value:new RegExp('^correcciones$')
 }
-const gupVal=gup()
+window.avonRol=(password:string)=>{
+	sessionStorage.setItem(ADMIN.key,password)
+}
+
+var gupVal=gup();
+console.log('path',window.location.pathname);
 
 window.addEventListener('load',()=>{
-	console.log(gupVal);
-	brochureRedirection(ADMIN,'/brochure*',gupVal)
-	SearchViewHandler(ADMIN,'/search/.*')
+	brochureRedirection(ADMIN,'/brochure*')
+	SearchViewHandler(ADMIN,'/search/.*',gupVal)
 })

@@ -1,11 +1,12 @@
-import { onlyAdmin } from './libs/onlyAdmin';
-export function brochureRedirection(admin, urlPatt, gup) {
-    onlyAdmin({
+import { onlyAdminConsole } from './libs/onlyAdmin';
+export function brochureRedirection(admin, urlPatt) {
+    onlyAdminConsole({
+        cookieKey: admin.key,
         admin: admin,
         inUrlPatt: urlPatt,
         onDenied: function () {
-            //window.location.href='/catalogos-avon'
+            window.location.href = '/catalogos-avon';
         }
-    }, gup);
+    });
 }
 //# sourceMappingURL=brochureRedirection.js.map

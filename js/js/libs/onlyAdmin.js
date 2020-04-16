@@ -1,4 +1,4 @@
-export function onlyAdmin(config, gup) {
+export function onlyAdminQueryString(config, gup) {
     var urlPatt = new RegExp(config.inUrlPatt);
     var cookieKey = config.cookieKey || 'avon-admin-rol';
     if (urlPatt.exec(window.location.pathname)) {
@@ -14,6 +14,25 @@ export function onlyAdmin(config, gup) {
             console.log('denied admin access');
             config.onDenied(cookieKey);
         }
+    }
+}
+export function onlyAdminConsole(config) {
+    var urlPatt = new RegExp(config.inUrlPatt);
+    var cookieKey = config.cookieKey || 'avon-admin-rol';
+    if (urlPatt.exec(window.location.pathname)) {
+        if (cookieValidation(cookieKey, config.admin.value)) {
+            console.log('admin have login cookies');
+        }
+        else {
+            console.log('denied admin access');
+            config.onDenied(cookieKey);
+        }
+    }
+}
+function cookieValidation(key, spected) {
+    var value = sessionStorage.getItem(key);
+    if (spected.test(value)) {
+        return true;
     }
 }
 function checkCokie(key) {
