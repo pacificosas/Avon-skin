@@ -1,7 +1,7 @@
 // handle products with no image when its rendered the search view
 import {Ranimator} from './libs//Ranimator/Ranimator'
 import {searchObserver} from './libs/observers/searchObserver'
-import {onlyAdmin} from './libs/onlyAdmin'
+import {onlyAdminQueryString as onlyAdmin} from './libs/onlyAdmin'
 import {IAdmin} from './Interfaces/IAdmin'
 
 
@@ -13,14 +13,15 @@ const selectors={
 
 const target="/styles/core/images/productfallback.svg"
 
-export function main(admin:IAdmin,urlPatt:string){
+export function main(admin:IAdmin,urlPatt:string,gup:object){
 	onlyAdmin({
+		cookieKey:admin.key,
 		admin:admin,
 		inUrlPatt:urlPatt,
 		onDenied:()=>{
 			apply(urlPatt)
 		}
-	})
+	},gup)
 }
 
 function apply(urlPatt:string){
