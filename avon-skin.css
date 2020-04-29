@@ -388,6 +388,16 @@ div#ProductDetailContainer #ProductDescription #reviews .bv-header .bv-action-ba
     letter-spacing: 1px;
     margin-top: 1.5rem;
 }
+.ProductDetail div.AddToCart .Button-add-to-wishlist{
+   border-radius: 14px !important;
+   font-size: 13px !important;
+   font-weight: normal !important;
+   letter-spacing: 0.3px !important;
+   height: 69px !important;
+}
+.ProductDetail.desktop div.AddToCart .button-add-to-cart{
+    height: 69px !important;
+}
 
 /*Fin Product Detail*/
 
