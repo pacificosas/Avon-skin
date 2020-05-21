@@ -1,4 +1,4 @@
-/* V.1.2.4 */
+/* V.1.2.11 */
 
 .Button {
     text-align: center;
@@ -14,7 +14,7 @@
 h2 {
     margin-bottom: 35px;
 }
-
+/*
 .ProductSummary .ProductItemDetails>div .HighlightedText {
     font-size: 18px;
     font-weight: 600;
@@ -30,7 +30,7 @@ span.FontNormal {
 
 .ProductSummary .ProductItemDetails>div .PriceStrike span {
     color: #888;
-}
+}*/
 
 /*Contenedor REP*/
 
@@ -440,6 +440,7 @@ div#ProductDescription .tab-content .tab-pane p {
 }
 
 @media  (max-width: 768px) {
+    /*
   #ProductDetailContainer .ProductDetails>div {
     display: block !important;
     width: 100% !important;
@@ -451,7 +452,7 @@ div#ProductDescription .tab-content .tab-pane p {
     margin-top: 0;
   }
   .RightColumnFAR .FormButton .Button, .Layout_Phone .BARRepWidget .Button span {
-  }
+  }*/
   div#FooterColumns>div {
     min-height: auto !important;
   }
@@ -480,7 +481,8 @@ div#ProductDescription .tab-content .tab-pane p {
   #ProductNameAndRating .product-meta-rating button {
     margin-top: 0 !important;
   }
+  /*
   .ProductInformation .ProductDetails .Prices .Price {
     font-size: 2rem !important;
-  }
+  }*/
 }
