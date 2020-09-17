@@ -1,4 +1,4 @@
-/* V.1.2.12 */
+/* V.1.2.13 */
 .Button {
     text-align: center;
     border-radius: 1.4rem;
@@ -44,14 +44,14 @@ span.FontNormal {
 
 #FindByLocation .FormField {
     border-right: 1px solid white;
-    margin-left: 10%;
+    margin-left: 2%;
     display: inline-block;
-    padding-right: 13%;
+    padding-right: 8%;
 }
 
 form#FindByLocation {
     display: inline-block!important;
-    width: 45%!important;
+    width: auto!important;
     right: 0!important;
 }
 
@@ -67,18 +67,21 @@ form#FindByLocation * {
     font-family: Arial,Gotham,"Helvetica Neue",Helvetica,sans-serif;
     font-size: 16px;
 }
-
+.FindARepModule .Footer .AvonFormContainer form .FormField .InputWithIcon, .FindARepModule .Footer .AdvancedSearchFormContainer form .FormField .InputWithIcon {
+    width: 33rem!important;
+}
 .InputWithIcon {
     margin-left: 0;
     margin-top: 12px;
 }
 
 .AlreadyKnow {
-    margin-left: 4% ;
-    display: inline-block ;
-    color: #ec008c ;
-    margin-top: 15px ;
-    vertical-align: top;
+    margin-left: 4%!important ;
+    display: inline-block!important;
+    color: #ec008c !important;
+    margin-top: 15px !important;
+    vertical-align: top!important;
+    width: 50%!important;
 }
 
 .AlreadyKnow p {
@@ -186,7 +189,7 @@ div#FooterSocialMediaColumn nav.ng-scope {
 }
 
 .Layout_Desktop footer #FooterColumns>div#FooterSocialMediaColumn a {
-    display: inline-block;
+    display: inline-block!important;
 }
 
 span.SocialText {
@@ -226,31 +229,31 @@ div#FooterColumns>div:nth-child(4) {
 
 .RightColumnFAR .FormButton .Button {
     border-radius: 0 1.4rem 1.4rem 0;
-    padding: 11.5px;
+    padding: 9.5px;
 }
 
 .FARRepWidget, .BARRepWidget {
-    background: none;
-    border: none;
-    padding: 0;
-    margin-bottom: 15px;
-    width: auto;
-    max-width: none;
+    background: none!important;
+    border: none!important;
+    padding: 0!important;
+    margin-bottom: 15px!important;
+    width: auto!important;
+    max-width: none!important;
 }
 
 .FARRepWidget input#InputPostcode {
-    border-radius: 0;
-    margin: 9px auto;
-    width: 200px;
-    background: white;
-    border: 1px solid black;
-    text-align: left;
-    padding-left: 15px;
+    border-radius: 0!important;
+    margin: 9px auto!important;
+    width: 200px!important;
+    background: white!important;
+    border: 1px solid black!important;
+    text-align: left!important;
+    padding-left: 15px!important;
 }
 
 .BARRepWidget .BecomeARepForm .FormButton {
-    float: none;
-    text-align: left;
+    float: none!important;
+    text-align: left!important;
 }
 
 .BARRepWidget .BecomeARepForm p {
