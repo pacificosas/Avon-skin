@@ -14,6 +14,6 @@ window.avonRol=(password:string)=>{
 var gupVal=gup();
 
 window.addEventListener('load',()=>{
-	//brochureRedirection(ADMIN,'/brochure*')
+	brochureRedirection(ADMIN,'/brochure*')
 	SearchViewHandler(ADMIN,'/search/.*',gupVal)
 })
