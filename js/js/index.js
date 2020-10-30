@@ -1,4 +1,5 @@
 import { main as SearchViewHandler } from './searchView_noImgHandler';
+import { brochureRedirection } from './brochureRedirection';
 import { gup } from './libs/gup';
 var ADMIN = {
     key: 'avonRol',
@@ -9,7 +10,7 @@ window.avonRol = function (password) {
 };
 var gupVal = gup();
 window.addEventListener('load', function () {
-    //brochureRedirection(ADMIN,'/brochure*')
+    brochureRedirection(ADMIN, '/brochure*');
     SearchViewHandler(ADMIN, '/search/.*', gupVal);
 });
 //# sourceMappingURL=index.js.map
